@@ -8,7 +8,6 @@ function setup() {
 
 function draw() {
   background(220)
-  
   player.update();
   player.show();
   
@@ -19,10 +18,17 @@ function draw() {
     textSize(200)
     textAlign(CENTER)
     text("Help", width/2, height/2)
+
     platforms.push(new Platform(100, 350, 150, 20));
     platforms.push(new Platform(900, 350, 150, 20));
+
     platforms.push(new Platform(500, 150, 200, 20));
-    platforms.push(new Platform(500, 150, 200, 20));
+    platforms.push(new Platform(500, 550, 200, 20));
+
+    platforms.push(new Platform(300, 650, 200, 20));
+    platforms.push(new Platform(700, 650, 200, 20));
+
+
   }
 }
 
